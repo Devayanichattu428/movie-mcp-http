@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server-http.ts",
-    "start": "node --loader ts-node/esm src/server-http.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "build": "tsc",
+  "dev": "node --loader ts-node/esm src/server-http.ts",
+  "start": "node dist/server-http.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
